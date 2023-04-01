@@ -1,5 +1,112 @@
-/*  
-    2 2
-    4
-      4
- */
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	transition: all 0.3s ease-in-out;	
+	user-select: none;
+}
+body{
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	background-color: wheat;
+	justify-content: center;
+}
+.wrapper_quiz{
+	width: 500px;
+	height: 600px;
+	background-color: white;
+	border-radius: 8px;
+	box-shadow: 0 0 5px 5px rgba(0,0,0,0.2);
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	gap: 40px;
+	align-items: center;
+}
+.questions_content{
+	display: flex;
+	padding: 40px;
+	align-items: center;
+	justify-content: space-between;
+	background-color: aliceblue;
+	width: 100%;
+	height: 50px;
+	border-radius: 8px;
+	box-shadow: 0 10px 5px -5px #e6ecc1;
+	font-size: 40px;
+
+}
+#operation{
+	color: red;
+}
+.answers_content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
+	gap: 20px;
+}
+.answers_content button{
+	width: 200px;
+	height: 50px;
+	font-size: 30px;
+	background-color: azure;
+	border: none;
+	color: blueviolet;
+	border-radius: 8px;
+	box-shadow: 7px 7px 7px 2px rgba(34, 60, 80, 0.2) inset,
+	7px 7px 7px 2px rgba(34, 60, 80, 0.2);
+	cursor: pointer;
+}
+.time, .level{
+	height:80px;
+	width: 80px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: rgb(188, 188, 188);
+	font-size: 40px;
+	color: white;
+	box-shadow: 10px 10px 10px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 50%;
+
+}
+
+.elem{
+	display: flex;
+	gap: 270px;
+
+}
+
+.win{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: green;
+}
+.lose{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: red
+}
+.timeof{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: black;
+}
+.javob {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	gap: 20px;
+	align-items: flex-start;
+	justify-content: flex-start;
+	transition: all 0.4s ease-in-out;	 
+}
+.javob div{
+	transition: all 0.3s ease-in-out;	
+}
